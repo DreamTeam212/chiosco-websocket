@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Inserimento Comanda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Inserisci Comanda</h1>
+
+  <form id="comandaForm">
+    <label>Numero ordine: <input type="number" id="numero" required></label><br>
+
+    <label>Tipo piatto:
+      <select id="tipoPiatto">
+        <option value="niente">Niente</option>
+        <option value="panino">Panino</option>
+        <option value="piatto">Piatto</option>
+      </select>
+    </label><br>
+
+    <label>Carne (puoi selezionarne più di una):<br>
+      <select id="carne" multiple size="5">
+        <option value="hamburger">Hamburger</option>
+        <option value="capocollo">Capocollo</option>
+        <option value="salsiccia">Salsiccia</option>
+        <option value="hotdog">Hotdog</option>
+      </select>
+    </label><br>
+
+    <label>Extra (puoi selezionarne più di uno):<br>
+      <select id="extra" multiple size="4">
+        <option value="mozzarella">Mozzarella</option>
+        <option value="scamorza">Scamorza</option>
+        <option value="pomodoro-insalata">Pomodoro e Insalata</option>
+      </select>
+    </label><br>
+
+    <label>Verdure:<br>
+      <select id="verdure" multiple size="4">
+        <option value="melanzane">Melanzane</option>
+        <option value="zucchine">Zucchine</option>
+        <option value="peperoni">Peperoni</option>
+        <option value="melanzane-olio">Melanzane sott’olio</option>
+      </select>
+    </label><br>
+
+    <label>Salse:<br>
+      <select id="salse" multiple size="4">
+        <option value="ketchup">Ketchup</option>
+        <option value="maionese">Maionese</option>
+        <option value="bbq">BBQ</option>
+        <option value="tabasco">Tabasco</option>
+      </select>
+    </label><br>
+
+    <label>Fritti:<br>
+      <select id="fritti" multiple size="4">
+        <option value="patatine">Patatine</option>
+        <option value="suppli">Supplì</option>
+        <option value="crocchette">Crocchette</option>
+        <option value="fritto-misto">Fritto misto</option>
+      </select>
+    </label><br>
+
+    <button type="submit">Invia comanda</button>
+  </form>
+
+  <script src="inserimento.js"></script>
+</body>
+</html>
