@@ -1,4 +1,4 @@
-const ws = new WebSocket(`ws://${location.host}`);
+const ws = new WebSocket(`wss://${location.host}`);
 const lista = document.getElementById('listaCondimenti');
 
 ws.onmessage = function (event) {
